@@ -3,7 +3,7 @@
 Set-Location $PSScriptRoot
 
 Describe 'AzurePublicIPAddresses' {
-    Context 'Scrypt Analyzer' {
+    Context 'Script Analyzer' {
         It 'Does not have any issues with the Script Analyser - Get-MicrosoftAzureDatacenterIPRange' {
             Invoke-ScriptAnalyzer .\Functions\Get-MicrosoftAzureDatacenterIPRange.ps1 | Should be $null
         }
